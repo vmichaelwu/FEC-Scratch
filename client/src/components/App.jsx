@@ -12,15 +12,6 @@ const App = () => {
   return (
     <div className={styles.App}>
       <Header />
-      <button
-        onClick={() => {
-          axios.get('/api/users').then((response) => {
-            console.log(response.data);
-          });
-        }}
-      >
-        GET test
-      </button>
       <AddForm />
       <List />
     </div>
